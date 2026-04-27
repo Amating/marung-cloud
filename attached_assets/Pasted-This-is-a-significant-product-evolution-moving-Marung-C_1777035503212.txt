@@ -1,0 +1,21 @@
+This is a significant product evolution — moving Marung Cloud from USSD/feature phone infrastructure into a **smartphone-native app with Visa/Mastercard issuing**. Let me build a polished product concept screen for this.This is a significant strategic expansion. Let me build a comprehensive smartphone app mockup that captures the full product vision.This is a strong product evolution. Here's what this smartphone layer means strategically for Marung Cloud:
+
+**What changes with the smartphone app**
+
+The move from USSD-only to a smartphone app with a Visa or Mastercard virtual card shifts Marung from a *payments utility* into a *digital financial identity*. The phone number remains the wallet ID, but now it carries a card network behind it — which means a Marung Cloud subscriber can walk into any Woolworths, book a flight on Travelstart, or pay a Netflix subscription. That broadens the addressable market dramatically upward, not just downward.
+
+**The funding model stays clean**
+
+No deposits. The only route into the wallet is a cash send from a bank account — Nedbank, Standard Bank, Capitec, FNB, any interbank transfer. The Sponsor Bank holds the float. This keeps Marung firmly inside the TPPP framework and outside the banking licence requirement. That single architectural decision is what makes the R10/month flat-rate model viable — you are not taking liability for deposits.
+
+**Wallet-to-wallet as the viral mechanic**
+
+The rule that the recipient must also be a Marung Cloud subscriber is not a limitation — it is the growth engine. Every send creates a recruitment event. The sender becomes an ambassador because they need the other person on the platform before money can move. This is exactly how M-Pesa scaled and how Cash App grew in the US.
+
+**The affluent market unlock**
+
+The Visa/Mastercard issuing is the piece that makes this relevant beyond the underbanked. A young professional who already has a Capitec account but wants a second wallet for household staff payments, online subscriptions, or travel spend will find R10/month an easy decision. That dual-market positioning — unbanked at the base, digitally-led affluent at the top — is what gives Marung Cloud its story in front of investors like First Circle Capital.
+
+**Next steps this opens up**
+
+You will want to bring this smartphone product into the CMS RM Partners brief, specifically the Sponsor Bank workstream with Nedbank around card issuing terms, and the POPIA/FICA workstream around mobile onboarding KYC. The offline transaction capability (voucher codes backed by wallet balance) also needs a technical architecture decision — that is worth a CloudZA working session before the October MVP.
