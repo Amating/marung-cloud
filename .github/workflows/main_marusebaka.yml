@@ -23,11 +23,16 @@ jobs:
         with:
           node-version: '24.x'
 
-      - name: npm install, build, and test
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: pnpm install, build, and test
         run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+          pnpm install
+          pnpm run build --if-present
+          pnpm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -47,7 +52,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-      
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -62,4 +67,3 @@ jobs:
           app-name: 'marusebaka'
           slot-name: 'Production'
           package: .
-          
