@@ -28,11 +28,11 @@ jobs:
         with:
           version: 9
 
-      - name: pnpm install and build
+            - name: pnpm install and build
         run: |
           pnpm install --no-frozen-lockfile
+          pnpm --filter './lib/api-zod' run build
           pnpm run build
-
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
