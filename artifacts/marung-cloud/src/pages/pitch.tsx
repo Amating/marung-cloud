@@ -4,7 +4,7 @@ import logoImg from "@/assets/logo.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const } },
 };
 
 const stagger = {
@@ -151,7 +151,7 @@ export default function Pitch() {
                   <p className="text-4xl font-display font-bold text-primary">{item.stat}</p>
                   <p className="font-semibold text-sm leading-snug">{item.label}</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">{item.detail}</p>
-                </motion.div>
+                </motion.div>as const
               ))}
             </motion.div>
           </motion.section>
@@ -453,7 +453,7 @@ export default function Pitch() {
                         initial={{ width: 0 }}
                         whileInView={{ width: `${item.pctNum}%` }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                        transition={{ duration: 0.8, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] as const }}
                         className="h-full rounded-full bg-primary"
                       />
                     </div>

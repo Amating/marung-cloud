@@ -31,13 +31,30 @@ jobs:
       - name: pnpm install and build
         run: |
           pnpm install --no-frozen-lockfile
-          pnpm --filter './lib/api-zod' run build
-          pnpm run build
+          pnpm run typecheck:libs
+          pnpm --filter './artifacts/api-server' run typecheck
+          pnpm --filter './artifacts/api-server' run build
+
+      - name: Write deployment package.json
+        run: |
+          cat > artifacts/api-server/package.json << 'EOF'
+          {
+            "name": "marung-api-server",
+            "version": "1.0.0",
+            "private": true,
+            "type": "module",
+            "engines": { "node": "24.x" },
+            "scripts": {
+              "start": "node --enable-source-maps ./dist/index.mjs"
+            }
+          }
+          EOF
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: artifacts/api-server
 
   deploy:
     runs-on: ubuntu-latest
