@@ -3,8 +3,7 @@ import { useState } from "react";
 import { Smartphone, ArrowRight, Users, Globe, ChevronDown, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import logoImg from "@/assets/logo.png";
-import heroImg from "@/assets/hero.png";
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
