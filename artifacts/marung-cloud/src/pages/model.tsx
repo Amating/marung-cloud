@@ -5,7 +5,7 @@ import {
   Tooltip, ResponsiveContainer, Legend
 } from "recharts";
 import { ArrowRight, Mail } from "lucide-react";
-import logoImg from "@/assets/logo.png";
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
