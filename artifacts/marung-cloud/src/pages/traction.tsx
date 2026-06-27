@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, CheckCircle, Clock } from "lucide-react";
-import logoImg from "@/assets/logo.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -158,7 +157,7 @@ export default function Traction() {
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-4 flex items-center justify-between bg-background/80 backdrop-blur-lg border-b border-border">
         <a href="/" className="flex items-center gap-3">
-          <img src={logoImg} alt="Marung" className="h-8 w-8 object-contain" />
+          
           <span className="font-display font-semibold text-lg tracking-wide">Marung</span>
         </a>
         <div className="flex items-center gap-4">
