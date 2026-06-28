@@ -52,11 +52,9 @@ export default function Home() {
       {/* ── NAVIGATION ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-4 flex items-center justify-between bg-background/80 backdrop-blur-lg border-b border-border">
         <a href="#home" className="flex items-center gap-3 no-underline" data-testid="nav-logo">
-          <img src={logoImg} alt="Marung" className="h-8 w-8 object-contain" />
-          <span className="font-display font-semibold text-lg tracking-wide text-foreground">Marung</span>
+    <span className="font-display font-semibold text-lg tracking-wide text-foreground">Marung</span>
         </a>
-
-        <div className="hidden md:flex items-center gap-8">
+      <div className="hidden md:flex items-center gap-8">
           <NavLink href="#home" label="Home" />
           <NavLink href="#about" label="About" />
           <NavLink href="#product" label="Product" />
