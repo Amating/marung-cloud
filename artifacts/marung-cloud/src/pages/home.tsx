@@ -93,7 +93,7 @@ export default function Home() {
             <img
               
               alt="Community"
-              className="w-full h-full object-cover opacity-25"
+              
             />
           </div>
 
