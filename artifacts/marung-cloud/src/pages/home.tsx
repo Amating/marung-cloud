@@ -90,12 +90,19 @@ export default function Home() {
           {/* Background image */}
           <div className="absolute inset-0 z-0 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background z-10" />
+<<<<<<< HEAD
+            
+             
+            
+          
+=======
             
               
               
               
             />
-          </div>
+          
+>>>>>>> 3cf6e9e4d784511e6671036378c1ea062b71e722
 
           <motion.div
             initial="hidden"
