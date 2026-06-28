@@ -168,8 +168,7 @@ export default function PitchPDF() {
       {/* ── SLIDE 1: COVER ── */}
       <div style={{ ...slide, background: `linear-gradient(135deg, ${GREEN} 0%, #0d2d1e 100%)`, color: "#fff" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "auto" }}>
-          <img src={logoImg} alt="Marung" style={{ height: "36px", width: "36px", objectFit: "contain" }} />
-          <span style={{ fontFamily: "'Clash Display','Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "18px", color: "#fff" }}>Marung</span>
+         <span style={{ fontFamily: "'Clash Display','Plus Jakarta Sans',sans-serif", fontWeight: 700, fontSize: "18px", color: "#fff" }}>Marung</span>
         </div>
 
         <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "40px", paddingBottom: "40px" }}>
