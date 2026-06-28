@@ -33,7 +33,7 @@ export default function Pitch() {
 
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-4 flex items-center justify-between bg-background/80 backdrop-blur-lg border-b border-border">
-        <a href="/" className="flex items-center gap-
+        <a href="/" className="flex items-center gap-3">
        <span className="font-display font-semibold text-lg tracking-wide">Marung</span>
         </a>
         <div className="flex items-center gap-3">
