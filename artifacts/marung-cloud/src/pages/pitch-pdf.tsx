@@ -1,4 +1,4 @@
-import 
+import  import React from "react";
 
 const GREEN = "#1a4731";
 const GOLD = "#d4a017";
