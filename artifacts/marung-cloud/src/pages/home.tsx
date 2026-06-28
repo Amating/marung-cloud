@@ -420,7 +420,42 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── CONTACT ── */}
+        <motion.section variants={fadeUp} className="max-w-4xl mx-auto px-6 md:px-12 py-20 space-y-8">
+  <h2 className="font-display font-bold text-3xl md:text-4xl">About Marung</h2>
+
+  <div className="space-y-6 text-foreground/80 leading-relaxed">
+    <p><strong>Why we exist</strong><br/>
+    In April 2025, money arrived in a phone — but spending it still meant a trip to an ATM. That gap, between having money digitally and actually being able to use it, is where Marung began.</p>
+
+    <p>For millions of South Africans — domestic workers, gardeners, foreign nationals, people receiving money from family in rural areas — that gap isn't a minor inconvenience. It's the line between financial inclusion and financial exclusion, even when the money is already theirs.</p>
+
+    <p>Marung Cloud was built to close that gap. Not by replacing banks, but by giving people a way to actually transact with the money they already have — instantly, at a flat R10/month, with no per-transaction fees, no lending, and no credit profiling.</p>
+
+    <p><strong>What Marung will not solve</strong><br/>
+    We won't pretend to be a bank, because we aren't one. Marung Cloud is a Third-Party Payment Provider, operating under South Africa's National Payment System Act, working through licensed sponsor banking infrastructure — not around it.</p>
+
+    <p>We also won't lend money, score creditworthiness, or profit from anyone's financial vulnerability. That's a deliberate boundary, not a missing feature. Debt-free by design means exactly that.</p>
+
+    <p><strong>Core principles</strong></p>
+    <ul className="list-disc pl-6 space-y-2">
+      <li><strong>Inclusion Philosophy</strong> — Built for the underbanked first, not as an afterthought market.</li>
+      <li><strong>Design Philosophy</strong> — USSD-first, so a smartphone is never a requirement for participation.</li>
+      <li><strong>Ethics & Privacy</strong> — No predatory lending, no exploitative fees, no profiling.</li>
+      <li><strong>African-First Thinking</strong> — Designed for South African realities, with a Lesotho/SADC corridor as the next step.</li>
+      <li><strong>Cloud Money Philosophy</strong> — Money should move as easily as a phone call.</li>
+    </ul>
+
+    <p><strong>System boundaries</strong><br/>
+    We focus on participation — making it possible for anyone to receive, hold, and spend money. Our partners — sponsor banks, card networks, cloud infrastructure providers — handle settlement, custody, and the regulated financial plumbing underneath. We sit on top, not in place of, that system.</p>
+  </div>
+
+  <p>
+    📧 Want to know more, partner with us, or explore investment opportunities? Reach out at{" "}
+    <a href="mailto:botsamaru@marungsebaka.co.za" className="text-primary underline">
+      botsamaru@marungsebaka.co.za
+    </a>
+  </p>
+</motion.section>{/* ── CONTACT ── */}
         <section id="contact" className="py-24 px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
